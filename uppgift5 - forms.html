@@ -19,15 +19,78 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 -->
 
 <!DOCTYPE html>
-<html>
-
-<head>
+    <head>
     <meta charset="UTF-8">
-    <title></title>
-</head>
+    <title>Form</title>
+    </head>
+    <style>
+    
+        body {
+            
+            background-image: url("misc/arnold.webp");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white; 
 
-<body>
+        }
 
-</body>
+        
+        fieldset {
+            background-color: rgba(0, 0, 0, 0.6); 
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
 
+        h1 {
+            text-shadow: 2px 2px 4px black;
+        }
+
+         </style>
+        </head>
+        <body>
+
+        <h1>Skriv upp dig på vårat nyhetsbrev!</h1>
+
+    <form action="tack.html" method="get">
+
+        <div>
+        <fieldset style="border-width: 10px; border-color: red; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            <legend>Personlig information</legend>
+
+            <label for="namn">För och efternamn:</label>
+            <input type="text" id="namn" name="namn"><br><br>
+
+            <label for="email">Email-adress:</label>
+            <input type="text" id="email" name="email"><br><br>
+        </fieldset>
+        </div>
+
+        <fieldset style="border-width: 10px; border-color: blue; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            <legend>Preferenser</legend>
+        <div>
+            <p>Kön:</p>
+            <input type="radio" id="man" name="kön" value="Man">
+            <label for="male">Man</label>
+            <input type="radio" id="kvinna" name="kön" value="Kvinna">
+            <label for="kvinna">Kvinna</label><br><br>
+
+            <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev">
+            <label for="nyhetsbrev">Jag vill få måntliga nyhetsbrev om vår organisation</label><br><br>
+
+            <label for="land">Välj land:</label>
+            <select id="land" name="land">
+                <option value="Sverige">Sverige</option>
+                <option value="Norge">Norge</option>
+                <option value="Danmark">Danmark</option>
+            </select>
+        </fieldset>
+        </div>
+        <br>
+        <input type="submit" value="Skicka in">
+    </form>
+    </body>
 </html>
