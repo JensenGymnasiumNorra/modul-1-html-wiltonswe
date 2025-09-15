@@ -26,11 +26,124 @@ Exempel på innehåll listorna:
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Lists</title>
 </head>
-<body>
+
+<!--Lägger in bakrundsbilden på hemsidan och gör allt innehål lite transparent så man ser bakrundsbilden
+bakom allt samt gör så den anpassar sig till formatet av hemsidan-->
+
+  <style>
+    
+
+
+        body {
+            
+            background-image: url("misc/bakrund.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white; 
+
+        }
+
+        
+        fieldset {
+            background-color: rgba(0, 0, 0, 0.9); 
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px black;
+        }
+
+         </style>
+        </head>
+        <body>
+
+        <!-- H1 är titeln på hemsidan och align gör så texten centrerad högst upp och
+          font-family ändrar på vilket typsnitt som används-->
+
+    <h1 align="center" style="font-family: Arial, Helvetica, sans-serif">Mina favoriter :D</h1>
+
+    <br>
+
+    <!--Fieldset skapar en ett fält som texten och bilderna läggs i, border width och färg ändrar
+    på hur tjock kanten på fältet ska vara och färgen-->
+
+    <fieldset style="border-width: 10px; border-color: green;">
+
+        <!--h2 align center lägger headern i mitten av fältet-->
+
+    <h2 align="center">Mina favorit spel</h2>
+
+    <!--Gör om fältet till en inline-block som delat upp fälten i två marginaler,
+    där ul (unordered list) alignar med margin left (läggs i den vänstra marginalen)-->
+
+    <ul align="margin-left" style="display: inline-block">
+        <li>Minecraft</li>
+        <li>GTA V</li>
+        <li>Hitman World of Assasination</li>
+        <li>Red dead redemption 2</li>
+        <li>F1</li>
+    </ul>
+
+    <!--Lägger in en bild i fältet och alignar den åt höger i fältet-->
+
+        <img src="misc/minecraft.logo.png" align="right" width="125px">
+    </fieldset>
+
+    <br>
+
+    <fieldset style="border-width: 10px; border-color: red;">
+    <h2 align="center">Top fem filmer</h2>
+    
+    <ol align="margin-left" style="display: inline-block;">
+        <li>Dune 1</li>
+        <li>Dune 2</li>
+        <li>Dune Prophecy (egentligen en seire men den är bra)</li>
+        <li>Alla fast and furious filmer</li>
+        <li>Bilar filmerna</li>
+    </ol>
+        <img src="misc/dune.jpg" align="right" width="125px" >
+    </fieldset>
+
+    <br>
+
+    <fieldset style="border-width: 10px; border-color: aqua;">
+    <h2 align="center">Favoriter överlag</h2>
+
+    <div class="lista" style="width: 50%;">
+        <ul>
+            <li style="font-weight: 600;">Kurser</li>
+                <ul>
+                    <li>Webbutveckling</li>
+                    <li>Programmering</li>
+                </ul>
+            </li>
+            <li style="font-weight: 600;">Lärare</li>
+                <ul>
+                    <li>Olle</li>
+                    <li>Hampus</li>
+                    <li>Sofia</li>
+                </ul>
+            </li>
+            <li>Sporter</li>
+                <ul>
+                    <li>Klättring</li>
+                    <li>Motorsport (t.ex F1)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </fieldset>
+
 
 </body>
 </html>
+
 
 
